@@ -14,6 +14,8 @@ fn process_point(point: Point) {
 pub fn show_point(){
     let p = Point { x: 0, y: 0 };
     let p2 = Point { x: 1, y: 111 };
+    println!("{}",p.x);
     process_point(p);
     process_point(p2);
+
 }

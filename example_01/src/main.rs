@@ -6,6 +6,7 @@ mod mut_var;
 mod process_control;
 mod enum_match;
 mod struct_match;
+mod func_var;
 
 use crate::enum_match::show_shape_area;
 use crate::Option_var::divide;
