@@ -1,6 +1,8 @@
+mod enum_var;
 mod mut_var;
 mod process_control;
 
+use crate::enum_var::{enum_show, TrafficLight};
 use crate::mut_var::show_var;
 use crate::process_control::{
     for_and_while_compare, loop_cycle, process_control, show_for, show_item,
@@ -20,4 +22,7 @@ fn main() {
     for_and_while_compare();
     // loop 无限循环
     loop_cycle();
+    // 枚举
+    enum_show();
+
 }
