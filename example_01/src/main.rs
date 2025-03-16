@@ -10,6 +10,7 @@ mod func_var;
 mod slice_var;
 mod str_var;
 mod tuple_var;
+mod struct_model;
 
 use crate::enum_match::show_shape_area;
 use crate::Option_var::divide;
@@ -21,6 +22,7 @@ use crate::process_control::{
 use crate::slice_var::show_slice;
 use crate::str_var::show_str;
 use crate::struct_match::show_point;
+use crate::struct_model::create_car;
 use crate::tuple_var::tuple_show;
 
 fn main() {
@@ -65,4 +67,7 @@ fn main() {
     show_str();
     // 元组
     tuple_show();
+
+    // 结构体
+    create_car();
 }
