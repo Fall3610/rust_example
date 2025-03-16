@@ -13,11 +13,13 @@ mod tuple_var;
 mod struct_model;
 mod array_var;
 mod vec_var;
+mod hashMap_var;
 
 use crate::array_var::array_show;
 use crate::enum_match::show_shape_area;
 use crate::option_var::divide;
 use crate::enum_var::{TrafficLight, enum_show};
+use crate::hashMap_var::hashmap_show;
 use crate::mut_var::show_var;
 use crate::process_control::{
     for_and_while_compare, loop_cycle, process_control, show_for, show_item,
@@ -78,4 +80,6 @@ fn main() {
     array_show();
     // 动态数组 vec
     vec_show();
+    // HashMap
+    hashmap_show();
 }
