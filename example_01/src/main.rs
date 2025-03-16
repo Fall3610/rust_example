@@ -9,6 +9,7 @@ mod struct_match;
 mod func_var;
 mod slice_var;
 mod str_var;
+mod tuple_var;
 
 use crate::enum_match::show_shape_area;
 use crate::Option_var::divide;
@@ -20,6 +21,7 @@ use crate::process_control::{
 use crate::slice_var::show_slice;
 use crate::str_var::show_str;
 use crate::struct_match::show_point;
+use crate::tuple_var::tuple_show;
 
 fn main() {
     println!("Hello, world!");
@@ -61,4 +63,6 @@ fn main() {
     show_slice();
     // 字符串字面量
     show_str();
+    // 元组
+    tuple_show();
 }
