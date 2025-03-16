@@ -7,6 +7,7 @@ mod process_control;
 mod enum_match;
 mod struct_match;
 mod func_var;
+mod slice_var;
 
 use crate::enum_match::show_shape_area;
 use crate::Option_var::divide;
@@ -15,6 +16,7 @@ use crate::mut_var::show_var;
 use crate::process_control::{
     for_and_while_compare, loop_cycle, process_control, show_for, show_item,
 };
+use crate::slice_var::show_slice;
 use crate::struct_match::show_point;
 
 fn main() {
@@ -52,4 +54,7 @@ fn main() {
     show_shape_area();
     // 结构体匹配
     show_point();
+
+    // 切片
+    show_slice();
 }
