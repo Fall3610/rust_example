@@ -12,6 +12,7 @@ mod str_var;
 mod tuple_var;
 mod struct_model;
 mod array_var;
+mod vec_var;
 
 use crate::array_var::array_show;
 use crate::enum_match::show_shape_area;
@@ -26,6 +27,7 @@ use crate::str_var::show_str;
 use crate::struct_match::show_point;
 use crate::struct_model::create_car;
 use crate::tuple_var::tuple_show;
+use crate::vec_var::vec_show;
 
 fn main() {
     println!("Hello, world!");
@@ -74,4 +76,6 @@ fn main() {
     create_car();
     // 静态数组
     array_show();
+    // 动态数组 vec
+    vec_show();
 }
