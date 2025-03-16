@@ -1,6 +1,6 @@
 extern crate core;
 
-mod Option_var;
+mod option_var;
 mod enum_var;
 mod mut_var;
 mod process_control;
@@ -11,9 +11,11 @@ mod slice_var;
 mod str_var;
 mod tuple_var;
 mod struct_model;
+mod array_var;
 
+use crate::array_var::array_show;
 use crate::enum_match::show_shape_area;
-use crate::Option_var::divide;
+use crate::option_var::divide;
 use crate::enum_var::{TrafficLight, enum_show};
 use crate::mut_var::show_var;
 use crate::process_control::{
@@ -70,4 +72,6 @@ fn main() {
 
     // 结构体
     create_car();
+    // 静态数组
+    array_show();
 }
